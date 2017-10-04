@@ -14,7 +14,7 @@ public class BasePage {
     WebDriver driver;
 
     public void fillField(WebElement element, String value) {
-        element.clear();
+    element.clear();
         element.sendKeys(value);
     }
 
