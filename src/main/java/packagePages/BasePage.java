@@ -3,6 +3,8 @@ package packagePages;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +16,7 @@ public class BasePage {
     WebDriver driver;
 
     public void fillField(WebElement element, String value) {
-    element.clear();
+        element.clear();
         element.sendKeys(value);
     }
 
@@ -31,13 +33,13 @@ public class BasePage {
             return element.isDisplayed();
         } catch (NoSuchElementException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return false;
     }
 
-    public boolean checkTelephone(WebElement element){
+    public boolean checkTelephone(WebElement element) {
         return isElementPresent(element);
     }
 

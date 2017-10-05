@@ -15,11 +15,17 @@ public class RequestsPage extends BasePage {
     @FindBy(xpath = "html/body/div[1]/div/div[2]/div/div/div/div[3]/form/div[2]/div/div/select")
     public WebElement testCaseSelect;
 
-    @FindBy(css = "html/body/div[1]/div/div[2]/div/div/div/div[3]/form/div[3]/div/div/textarea")
+    @FindBy(xpath = "html/body/div[1]/div/div[2]/div/div/div/div[3]/form/div[3]/div/div/textarea")
     public WebElement veReqTextArea;
 
-    @FindBy(css = "")
+    @FindBy(css = ".btn.btn-primary.btn-sm")
+    public WebElement sendVeReqButton;
+
+    @FindBy(xpath = "html/body/div[1]/div/div[2]/div/div/div/form/div[2]/div/div[4]/div/div/textarea")
     public WebElement paReqTextArea;
+
+    @FindBy(css = ".btn.btn-primary.btn-sm.ng-scope")
+    public WebElement sendPaReqButton;
 
     public RequestsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
