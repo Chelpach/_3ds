@@ -16,6 +16,9 @@ public class AcsPage extends BasePage {
     @FindBy(css = "#btnSubmit")
     public WebElement sendButton;
 
+    @FindBy(css="body > div > form > div:nth-child(4) > p > a")
+    public WebElement passwordAgain;
+
     public AcsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

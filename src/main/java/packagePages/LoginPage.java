@@ -18,6 +18,8 @@ public class LoginPage extends BasePage{
     @FindBy(css = ".btn.btn-primary.btn-sm")
     public WebElement loginButton;
 
+
+
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

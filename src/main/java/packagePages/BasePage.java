@@ -3,10 +3,10 @@ package packagePages;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by user on 12.09.2017.
@@ -41,6 +41,10 @@ public class BasePage {
 
     public boolean checkTelephone(WebElement element) {
         return isElementPresent(element);
+    }
+
+    public void assertResponse(String actual, String expected){
+        assertEquals(expected, actual);
     }
 
 }

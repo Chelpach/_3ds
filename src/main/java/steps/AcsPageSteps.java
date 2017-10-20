@@ -27,4 +27,10 @@ public class AcsPageSteps {
     public void clickSendOneTimPasswordButton() {
         new AcsPage(getDriver()).sendButton.click();
     }
+
+    @Step("Нажатие на кнопку получения повторного логина и пароля")
+    public void passwordAgainClick(){
+        new AcsPage(getDriver()).passwordAgain.click();
+        getDriver().switchTo().alert().accept();
+    }
 }
