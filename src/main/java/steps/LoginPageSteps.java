@@ -1,6 +1,5 @@
 package steps;
 
-import packagePages.BasePage;
 import packagePages.LoginPage;
 import ru.yandex.qatools.allure.annotations.Step;
 

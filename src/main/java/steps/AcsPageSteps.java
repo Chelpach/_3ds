@@ -7,9 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import packagePages.AcsPage;
 import ru.yandex.qatools.allure.annotations.Step;
 
-import static steps.BaseSteps.driver;
-import static steps.BaseSteps.getDriver;
-import static steps.BaseSteps.takeScreenshot;
+import static steps.BaseSteps.*;
 
 /**
  * Created by user on 05.10.2017.
